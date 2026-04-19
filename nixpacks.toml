@@ -11,5 +11,5 @@ cmds = [
 [phases.build]
 cmds = ["npm run build"]
 
-[start]
+[phases.deploy]
 cmd = "php artisan config:clear && php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=$PORT"
